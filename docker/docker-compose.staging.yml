@@ -1,6 +1,6 @@
 services:
   app:
-    image: ${IMAGE_TAG:-ghcr.io/scottrbk/auth:latest}
+    image: ${IMAGE_TAG:-ghcr.io/scottrbk/python_template:latest}
     build: 
       context: ${BUILD_CONTEXT:-..}
     ports:
