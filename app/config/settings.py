@@ -14,14 +14,14 @@ ENVIRONMENT = os.getenv("ENVIRONMENT", "development")
 class Settings(BaseSettings):
 
     # Application Info
-    SERVICE_NAME: str = "Service Name"
-    SERVICE_VERSION: str = os.getenv("SERVICE_VERSION", "v0.0.1")
-    SERVICE_DESCRIPTION: str= "Service Description"
+    SERVICE_NAME: str = "Python Template"
+    SERVICE_VERSION: str = "v0.1.0"
+    SERVICE_DESCRIPTION: str= "Python FastAPI Template Service"
 
     # Server Configuration
     HOST: str = "0.0.0.0"
-    PORT: int = 8010
-    LOG_LEVEL: str = "DEBUG"
+    PORT: int = 8020
+    LOG_LEVEL: str = "INFO"
 
 
     """Pydantic Configuration"""
